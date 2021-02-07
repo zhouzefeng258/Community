@@ -1,0 +1,117 @@
+Date : 2020-04-28 22:10:54
+Directory : d:\实习\gaoditu\gaode
+Total : 63 files,  21125 codes, 288 comments, 213 blanks, all 21626 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          2 |     13,796 |          0 |          2 |     13,798 |
+| Vue.js     |         39 |      6,275 |        164 |        100 |      6,539 |
+| JavaScript |         17 |        929 |        123 |         92 |      1,144 |
+| SCSS       |          1 |         81 |          0 |          4 |         85 |
+| HTML       |          1 |         18 |          1 |          4 |         23 |
+| Markdown   |          1 |         14 |          0 |          8 |         22 |
+| Properties |          1 |          8 |          0 |          2 |         10 |
+| Ignore     |          1 |          4 |          0 |          1 |          5 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                 | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                    |         63 |     21,125 |        288 |        213 |     21,626 |
+| build                                                                |          7 |        465 |         40 |         55 |        560 |
+| config                                                               |          3 |         41 |         30 |         19 |         90 |
+| src                                                                  |         45 |      6,747 |        207 |        118 |      7,072 |
+| src\action                                                           |          1 |          2 |          0 |          1 |          3 |
+| src\api                                                              |          1 |         32 |         33 |          4 |         69 |
+| src\assets                                                           |          2 |        223 |          6 |          6 |        235 |
+| src\assets\data                                                      |          1 |        142 |          6 |          2 |        150 |
+| src\assets\style                                                     |          1 |         81 |          0 |          4 |         85 |
+| src\components                                                       |         16 |      3,562 |        108 |         48 |      3,718 |
+| src\components\activity                                              |          3 |        826 |         15 |          8 |        849 |
+| src\components\admin                                                 |          3 |        531 |         24 |          5 |        560 |
+| src\components\community                                             |          5 |      1,232 |         14 |         13 |      1,259 |
+| src\components\news                                                  |          2 |        419 |         22 |          5 |        446 |
+| src\components\public                                                |          2 |        336 |         33 |         13 |        382 |
+| src\components\userTableDialog                                       |          1 |        218 |          0 |          4 |        222 |
+| src\router                                                           |          1 |        197 |          0 |          3 |        200 |
+| src\views                                                            |         22 |      2,692 |         56 |         51 |      2,799 |
+| src\views\activity                                                   |          6 |        695 |          9 |         13 |        717 |
+| src\views\admin                                                      |          3 |        546 |          2 |          7 |        555 |
+| src\views\community                                                  |          5 |        577 |         36 |         12 |        625 |
+| src\views\item1                                                      |          3 |        207 |          3 |          4 |        214 |
+| src\views\news                                                       |          3 |        222 |          3 |          5 |        230 |
+| src\views\wxUser                                                     |          1 |        190 |          3 |          4 |        197 |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                             | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\实习\gaoditu\gaode\.editorconfig                                    | Properties |          8 |          0 |          2 |         10 |
+| d:\实习\gaoditu\gaode\.eslintignore                                    | Ignore     |          4 |          0 |          1 |          5 |
+| d:\实习\gaoditu\gaode\.eslintrc.js                                     | JavaScript |         25 |          8 |          2 |         35 |
+| d:\实习\gaoditu\gaode\.postcssrc.js                                    | JavaScript |          7 |          2 |          2 |         11 |
+| d:\实习\gaoditu\gaode\README.md                                        | Markdown   |         14 |          0 |          8 |         22 |
+| d:\实习\gaoditu\gaode\build\build.js                                   | JavaScript |         35 |          0 |          7 |         42 |
+| d:\实习\gaoditu\gaode\build\check-versions.js                          | JavaScript |         45 |          0 |         10 |         55 |
+| d:\实习\gaoditu\gaode\build\utils.js                                   | JavaScript |         80 |          5 |         17 |        102 |
+| d:\实习\gaoditu\gaode\build\vue-loader.conf.js                         | JavaScript |         21 |          0 |          2 |         23 |
+| d:\实习\gaoditu\gaode\build\webpack.base.conf.js                       | JavaScript |         88 |          4 |          4 |         96 |
+| d:\实习\gaoditu\gaode\build\webpack.dev.conf.js                        | JavaScript |         82 |          7 |          7 |         96 |
+| d:\实习\gaoditu\gaode\build\webpack.prod.conf.js                       | JavaScript |        114 |         24 |          8 |        146 |
+| d:\实习\gaoditu\gaode\config\dev.env.js                                | JavaScript |          6 |          0 |          2 |          8 |
+| d:\实习\gaoditu\gaode\config\index.js                                  | JavaScript |         31 |         30 |         16 |         77 |
+| d:\实习\gaoditu\gaode\config\prod.env.js                               | JavaScript |          4 |          0 |          1 |          5 |
+| d:\实习\gaoditu\gaode\index.html                                       | HTML       |         18 |          1 |          4 |         23 |
+| d:\实习\gaoditu\gaode\package-lock.json                                | JSON       |     13,714 |          0 |          1 |     13,715 |
+| d:\实习\gaoditu\gaode\package.json                                     | JSON       |         82 |          0 |          1 |         83 |
+| d:\实习\gaoditu\gaode\src\App.vue                                      | Vue.js     |         21 |          0 |          1 |         22 |
+| d:\实习\gaoditu\gaode\src\action\util.js                               | JavaScript |          2 |          0 |          1 |          3 |
+| d:\实习\gaoditu\gaode\src\api\index.js                                 | JavaScript |         32 |         33 |          4 |         69 |
+| d:\实习\gaoditu\gaode\src\assets\data\menuData.js                      | JavaScript |        142 |          6 |          2 |        150 |
+| d:\实习\gaoditu\gaode\src\assets\style\index.scss                      | SCSS       |         81 |          0 |          4 |         85 |
+| d:\实习\gaoditu\gaode\src\components\activity\activityFrom.vue         | Vue.js     |        460 |          7 |          2 |        469 |
+| d:\实习\gaoditu\gaode\src\components\activity\activityRecordTable.vue  | Vue.js     |        160 |          4 |          3 |        167 |
+| d:\实习\gaoditu\gaode\src\components\activity\activityTable.vue        | Vue.js     |        206 |          4 |          3 |        213 |
+| d:\实习\gaoditu\gaode\src\components\admin\Tag.vue                     | Vue.js     |        189 |          3 |          1 |        193 |
+| d:\实习\gaoditu\gaode\src\components\admin\log.vue                     | Vue.js     |        156 |          1 |          2 |        159 |
+| d:\实习\gaoditu\gaode\src\components\admin\reg.vue                     | Vue.js     |        186 |         20 |          2 |        208 |
+| d:\实习\gaoditu\gaode\src\components\community\auditDialog.vue         | Vue.js     |        148 |          0 |          3 |        151 |
+| d:\实习\gaoditu\gaode\src\components\community\auditTabel.vue          | Vue.js     |        163 |          4 |          3 |        170 |
+| d:\实习\gaoditu\gaode\src\components\community\communityInfoFrom.vue   | Vue.js     |        302 |          2 |          2 |        306 |
+| d:\实习\gaoditu\gaode\src\components\community\communtiyTable.vue      | Vue.js     |        170 |          4 |          3 |        177 |
+| d:\实习\gaoditu\gaode\src\components\community\myCommunityInfoFrom.vue | Vue.js     |        449 |          4 |          2 |        455 |
+| d:\实习\gaoditu\gaode\src\components\news\newsEditor.vue               | Vue.js     |        242 |         18 |          2 |        262 |
+| d:\实习\gaoditu\gaode\src\components\news\newsTable.vue                | Vue.js     |        177 |          4 |          3 |        184 |
+| d:\实习\gaoditu\gaode\src\components\public\Editor.vue                 | Vue.js     |        186 |         29 |         10 |        225 |
+| d:\实习\gaoditu\gaode\src\components\public\table.vue                  | Vue.js     |        150 |          4 |          3 |        157 |
+| d:\实习\gaoditu\gaode\src\components\userTableDialog\dialog.vue        | Vue.js     |        218 |          0 |          4 |        222 |
+| d:\实习\gaoditu\gaode\src\main.js                                      | JavaScript |         18 |          4 |          4 |         26 |
+| d:\实习\gaoditu\gaode\src\router\index.js                              | JavaScript |        197 |          0 |          3 |        200 |
+| d:\实习\gaoditu\gaode\src\views\Index.vue                              | Vue.js     |        255 |          0 |          6 |        261 |
+| d:\实习\gaoditu\gaode\src\views\activity\activityApproval.vue          | Vue.js     |        192 |          3 |          3 |        198 |
+| d:\实习\gaoditu\gaode\src\views\activity\activityList.vue              | Vue.js     |        200 |          3 |          4 |        207 |
+| d:\实习\gaoditu\gaode\src\views\activity\activityRecord.vue            | Vue.js     |        189 |          3 |          3 |        195 |
+| d:\实习\gaoditu\gaode\src\views\activity\distributeActivity.vue        | Vue.js     |         34 |          0 |          1 |         35 |
+| d:\实习\gaoditu\gaode\src\views\activity\editActivity.vue              | Vue.js     |         40 |          0 |          1 |         41 |
+| d:\实习\gaoditu\gaode\src\views\activity\viewActivityInfo.vue          | Vue.js     |         40 |          0 |          1 |         41 |
+| d:\实习\gaoditu\gaode\src\views\admin\createSocieties.vue              | Vue.js     |        467 |          0 |          1 |        468 |
+| d:\实习\gaoditu\gaode\src\views\admin\login.vue                        | Vue.js     |         72 |          2 |          5 |         79 |
+| d:\实习\gaoditu\gaode\src\views\admin\shouye.vue                       | Vue.js     |          7 |          0 |          1 |          8 |
+| d:\实习\gaoditu\gaode\src\views\community\auditRecord.vue              | Vue.js     |        149 |          3 |          3 |        155 |
+| d:\实习\gaoditu\gaode\src\views\community\communityApproval.vue        | Vue.js     |        161 |          3 |          3 |        167 |
+| d:\实习\gaoditu\gaode\src\views\community\communityInfo.vue            | Vue.js     |        167 |          3 |          4 |        174 |
+| d:\实习\gaoditu\gaode\src\views\community\editCommunityInfo.vue        | Vue.js     |         47 |         27 |          1 |         75 |
+| d:\实习\gaoditu\gaode\src\views\community\myCommuntiyInfo.vue          | Vue.js     |         53 |          0 |          1 |         54 |
+| d:\实习\gaoditu\gaode\src\views\item1\item1-1.vue                      | Vue.js     |        193 |          3 |          2 |        198 |
+| d:\实习\gaoditu\gaode\src\views\item1\item1-2.vue                      | Vue.js     |          7 |          0 |          1 |          8 |
+| d:\实习\gaoditu\gaode\src\views\item1\item1-3.vue                      | Vue.js     |          7 |          0 |          1 |          8 |
+| d:\实习\gaoditu\gaode\src\views\news\distributeNews.vue                | Vue.js     |         30 |          0 |          1 |         31 |
+| d:\实习\gaoditu\gaode\src\views\news\editNews.vue                      | Vue.js     |         36 |          0 |          1 |         37 |
+| d:\实习\gaoditu\gaode\src\views\news\newsList.vue                      | Vue.js     |        156 |          3 |          3 |        162 |
+| d:\实习\gaoditu\gaode\src\views\wxUser\wxUserList.vue                  | Vue.js     |        190 |          3 |          4 |        197 |
+| Total                                                                |            |     21,125 |        288 |        213 |     21,626 |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
