@@ -1,0 +1,62 @@
+<!--pages/my/my.wxml-->
+<view class="pageCon">
+  <view class="userInfo" bindtap="toUserInfo">
+    <view class="infoCon">
+      <view class="userIcon">
+        <open-data class='icon' mode='aspectFit' type='userAvatarUrl'></open-data>
+      </view>
+      <view class="userInfo-r">
+        <view class="r-title">个人信息</view>
+        <view class="right-arrow">
+          <van-icon name="arrow" size="23px" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="title-bar">
+    <text>社团生活</text>
+  </view>
+  <view class="function-bar" bindtap="toClub">
+    <view class="bar-l">
+      <van-icon name="home-o" size="23px" />
+      <text class="title">我的社团</text>
+    </view>
+    <view class="bar-r">
+      <van-icon name="arrow" size="23px" />
+    </view>
+  </view>
+  <view class="function-bar" bindtap="toActivite">
+    <view class="bar-l">
+      <van-icon name="apps-o" size="23px" />
+      <text class="title">我的活动</text>
+    </view>
+    <view class="bar-r">
+      <van-icon name="arrow" size="23px" />
+    </view>
+  </view>
+  <view class="title-bar">
+    <text>其他</text>
+  </view>
+  <view class="function-bar" bindtap="toFeedBack">
+    <view class="bar-l">
+      <van-icon name="chat-o" size="23px" />
+      <text class="title">提交反馈</text>
+    </view>
+    <view class="bar-r">
+      <van-icon name="arrow" size="23px" />
+    </view>
+  </view>
+  <button open-type="contact" bindcontact="handleContact" class="function-bar">
+    <view class="bar-l">
+      <van-icon name="user-o" size="23px" />
+      <text class="title">联系客服</text>
+    </view>
+    <view class="bar-r">
+      <van-icon name="arrow" size="23px" />
+    </view>
+  </button>
+  <!-- <view >
+  
+   
+  </view> -->
+</view>

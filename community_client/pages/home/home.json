@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "w-swiper": "/components/swiper/swiper",
+    "w-botnav":"/components/botnav/botnav",
+    "van-notice-bar": "vant-weapp/notice-bar",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index"
+  }
+}

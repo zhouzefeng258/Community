@@ -1,0 +1,78 @@
+<!--pages/clubIntroduction/clubIntroduction.wxml-->
+<view class="pageCon">
+	<view class="top">
+		<view class="club-icon">
+			<van-image width="100" height="100" lazy-load round src="{{clubInfo.clubIcon}}" />
+		</view>
+		<view class="club-right">
+			<view class="club-right-top">
+				<view class="club-title">
+					<text>{{clubInfo.clubName}}</text>
+				</view>
+				<view class="club-star">
+					<van-rate readonly value="{{wxjs.getStar(clubInfo.starTotal,clubInfo.evaluationTimes)}}" bind:change="onChange" />
+				</view>
+			</view>
+			<view class="club-type">
+				<text>{{clubInfo.clubType}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="mid">
+		<!-- <van-tabs active="{{ 0 }}" bind:change="onChange" color="#6149f6">
+      <van-tab title="简介">
+     
+      </van-tab>
+      <van-tab title="活动">社团活动</van-tab>
+    </van-tabs> -->
+		<view class="mid-bar">
+			<view class="mid-title">
+				<text>简介</text>
+			</view>
+			<view class="mid-cont">
+				<view class='details-con'>
+					<view class="club-details">
+						<view class="clubItem dep">
+							<text class="title">学院/系:</text>
+							<text class="content">{{clubInfo.department}}</text>
+						</view>
+						<view class="clubItem qq">
+							<text class="title">联系QQ:</text>
+							<text class="content">{{clubInfo.qqNumber}}</text>
+						</view>
+						<view class="clubItem introduce">
+							<text class="title">社团介绍</text>
+							<text class="content">{{clubInfo.clubIntro}}</text>
+						</view>
+						<!-- <view class="clubItem atlas">
+             <text class="title">社团图集</text>
+
+             <view></view>
+            </view> -->
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="bot">
+		<!-- <button class="joinBtn">申请加入</button> -->
+		<van-button type="info" block color="linear-gradient(to right, #4bb0ff, #6149f6)" bindtap="showJionClubDialog" wx:if="{{!buttonType}}">申请加入</van-button>
+		<van-button type="warning" block bindtap="withdraw" wx:if="{{buttonType}}">取消申请</van-button>
+	</view>
+	<van-dialog use-slot title="请输入申请理由" show="{{ show }}" show-cancel-button confirm-button-open-type="getUserInfo" bind:close="onClose" bind:confirm="jionClub">
+		<van-cell-group>
+			<van-field value="{{reason}}" type="textarea" placeholder="请输入申请理由" autosize border="{{ true }}" bindinput="reasonInputChange" />
+		</van-cell-group>
+	</van-dialog>
+	<van-toast id="van-toast" />
+	<van-notify id="van-notify" />
+</view>
+
+<wxs module="wxjs">
+	var getStar = function(starTotal, evaluationTimes) {
+		var s = 0
+		s = (starTotal / evaluationTimes).toFixed()
+		return s
+	}
+	module.exports.getStar = getStar;
+</wxs>

@@ -1,0 +1,59 @@
+/* pages/myActivitie/myActivitie.wxss */
+.pageCon{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.top-con{
+  width: 50%;
+  height: 55rpx;
+  border: 2px solid #42a5f5;
+  display: flex;
+  border-radius: 10rpx;
+}
+.nav-tabs{
+  width: 50%;
+  border: 1px solid #42a5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+}
+.nav-tabs text{
+  color: #42a5f5;
+}
+.nav-tabs-active{
+  width: 50%;
+  border: 1px solid #42a5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #42a5f5;
+  font-size: 32rpx;
+}
+.nav-tabs-active text{
+  color: white;
+}
+.content{
+  width: 100%;
+  margin-top: 25rpx;
+}
+.actList{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.actitem{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}

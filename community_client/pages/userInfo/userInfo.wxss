@@ -1,0 +1,97 @@
+/* pages/userInfo/userInfo.wxss */
+view{
+  overflow: visible;
+}
+.page{
+  width: 100%;
+}
+.bindInfo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-con{
+  margin-top: 80rpx;
+  width:80%;
+  height: 1000rpx;
+  box-shadow: 0 0 10px 2px rgba(0,0,0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2%;
+}
+.header{
+  margin-top: 60rpx;
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  display: block;
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.form-field{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-con{
+  width: 100%;
+  height: 70rpx;
+  margin-top: 50rpx;
+  border: 1px solid rgba(0,0,0, 0.7);
+  border-radius: 70rpx;
+  display: flex;
+  align-items: center;
+
+}
+.info-input{
+  width: 94%;
+  margin-left: 20rpx;
+}
+.unselected{
+  color: rgba(0,0,0, 0.5);
+}
+.button-field{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60rpx;
+}
+.selected{
+  color:black;
+}
+.userInfo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-con{
+  width: 80%;
+  margin-top: 40rpx;
+}
+.label{
+  font-size: 35rpx;
+}
+.text{
+  margin-left: 32rpx;
+  font-size: 30rpx;
+}
+.edit-field{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100rpx;
+}
+.hide{
+  display: none;
+}

@@ -1,0 +1,29 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="pageCon">
+  <view class="page-item feedback">
+    <view class="label">
+      <text>您的问题或建议：</text>
+    </view>
+    <view class="textarea">
+      <textarea class="textarea-class" placeholder="请输入您的问题以及建议" placeholder-class="place-holder"  bindinput="proposalInput" value="{{user_proposal}}"/>
+    </view>
+  </view>
+  <view class="page-item contact">
+    <view class="label">
+      <text>您的联系方式：</text>
+    </view>
+    <view class="input">
+      <input class="input-class" placeholder="请输入手机号" placeholder-class="place-holder" bindinput="phoneInput"  value="{{user_phone}}"></input>
+    </view>
+     <view class="input">
+      <input class="input-class" placeholder="请输入邮箱" placeholder-class="place-holder" bindinput="emailInput"  value="{{user_email}}"></input>
+    </view>
+  </view>
+  <view class="page-tips">
+  <text>留下您的联系方式,以便我们了解问题后及时反馈结果给您,紧急问题请联系客服!</text>
+  </view>
+  <view class="submit">
+  <van-button type="primary" round block bindtap="submitProposal">提交意见</van-button>
+  </view>
+</view>
+ <van-notify id="van-notify" />

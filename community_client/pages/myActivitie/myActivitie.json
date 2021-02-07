@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "actItem": "/components/actitem/actItem"
+  }
+}

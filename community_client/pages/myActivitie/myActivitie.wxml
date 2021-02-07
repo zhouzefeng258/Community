@@ -1,0 +1,23 @@
+<!--pages/myActivitie/myActivitie.wxml-->
+<view class="pageCon">
+  <view class="top">
+    <view class="top-con">
+      <view class="{{tabClass1}}" bindtap="showUnderWay">
+        <text>进行中</text>
+      </view>
+      <view class="{{tabClass2}}" bindtap="showEnding">
+        <text>已结束</text>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="actList" >
+      <actItem  class="actitem" wx:for="{{recordList}}" actId="{{item.activityId}}" actType="{{actType}}" url="{{url}}" wx:key="key" bindtap="toAct" data-actid="{{item.activityId}}"  data-clubname="{{item.clubName}}"/>
+    </view>
+  </view>
+  <!-- <view class="content" wx:if="{{!showFlag}}">
+   <view class="actList">
+        <actItem  class="actitem" wx:for="{{recordList2}}" actId="{{item.activityId}}" actType="{{actType}}" url="{{url}}" wx:key="key" bindtap="toAct" data-actid="{{item.activityId}}"  data-clubname="{{item.clubName}}"/>
+    </view>
+  </view> -->
+</view>

@@ -1,0 +1,27 @@
+/* pages/newsContent/newsContent.wxss */
+.page-con{
+  widows: 100%;
+  display: flex;
+  justify-content: center;
+}
+.news{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.news-title{
+  width: 100%;
+  font-size: 45rpx;
+  margin-bottom: 40rpx;
+}
+.news-time{
+  font-size: 30rpx;
+  color: rgba(0,0,0, 0.6);
+  margin-bottom: 30rpx;
+}
+.news-issuer{
+  margin-top: 30rpx;
+  margin-bottom: 45rpx;
+  font-size: 28rpx;
+  color: rgba(0,0,0, 0.6);
+}

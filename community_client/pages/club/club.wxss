@@ -1,0 +1,323 @@
+/* pages/club/club.wxss */
+page {
+  background-color: rgba(0, 0, 0, 0.00)
+}
+
+.pageCon {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  width: 100%;
+  height: 250rpx;
+  display: flex;
+  align-items: center;
+}
+
+.club-icon {
+  margin-left: 5%;
+  width: 30%;
+}
+
+.club-right {
+  width: 70%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.club-right-top {
+  margin-left: 3%;
+  display: flex;
+}
+
+.club-title {
+  font-size: 40rpx;
+  font-weight: 300;
+}
+
+.club-star {
+  margin-left: 15rpx;
+  display: flex;
+  align-items: center;
+}
+.club-right-bot{
+  display: flex;
+}
+.club-type {
+  margin-left: 3%;
+  height: 40rpx;
+}
+.club-btn{
+  margin-left: 5%;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.club-type text {
+  background: #49afcd;
+  padding: 5rpx 20rpx;
+  color: white;
+  font-size: 30rpx;
+  font-weight: 300;
+  border-radius: 5rpx;
+}
+
+.details-con {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40rpx;
+}
+
+.club-details {
+  display: flex;
+  flex-direction: column;
+  width: 90%
+}
+
+.clubItem {
+  display: flex;
+  flex-direction: column;
+  margin: 40rpx 0;
+}
+
+.title {
+  font-size: 34rpx;
+  color: black;
+}
+
+.content {
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  color: #5a5a5a;
+}
+
+.bot {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 94%;
+}
+
+.activitieList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activitie-con {
+  width: 95%;
+  display: flex;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  height: 240rpx;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5rpx;
+}
+
+.act-img {
+  height: 90%;
+  width: 22.5%;
+  margin-left: 2.5%；
+}
+
+.act-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.act-right {
+  width: 70%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.act-title {
+  font-weight: 500;
+}
+
+.act_con {
+  font-size: 22rpx;
+  color: #5a5a5a;
+}
+
+.member {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-con {
+  width: 100%;
+  height: 130rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.2);
+}
+
+.con-l {
+  margin-left: 20rpx;
+}
+
+.member-icon {
+  display: block;
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.con-r {
+  margin-left: 30rpx;
+}
+
+.member-name {
+  margin-bottom: 10rpx;
+}
+
+.member-name text {
+  font-size: 40rpx;
+}
+
+.member-type {
+  width: 80rpx;
+  background-color: #49afcd;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10rpx;
+}
+
+.ordinary {
+  background-color: #ff976a
+}
+
+.member-type text {
+  color: white
+}
+
+.pageTips {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageTips text {
+  font-size: 35rpx;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.Button-con {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 930rpx;
+  justify-content: space-around;
+  margin-bottom: 40rpx;
+}
+
+.btn-con {
+  width: 220rpx;
+  height: 75rpx;
+  border-radius: 50rpx;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.quit {
+  background-color: rgba(73, 175, 205, 1);
+  /* background-color: #49afcd; */
+}
+
+.star {
+  background-color: rgba(255, 151, 106, 1);
+  /* background-color: #ff976a; */
+}
+
+.btn-icon {
+  width: 20%;
+}
+
+.btn-r {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-title {
+  color: white;
+  font-size: 30rpx;
+}
+
+.starDialog {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.club-quit-btn{
+  margin-left: 5%;
+}
+.notice-list-con{
+  width: 100%;
+  
+  overflow: auto;
+}
+.notice-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.notice-item{
+  width: 100%;
+  height: 140rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.notice-top{
+  height: 100rpx;
+  margin-top:15rpx;
+  width: 100%;
+  display: flex;
+}
+.notice-label{
+  width: 126rpx;
+  margin-left: 30rpx;
+  font-size: 32rpx;
+  color: #ff976a;
+}
+.notice-title{
+  margin-left: 10rpx;
+  font-size: 32rpx;
+  color: black;
+}
+
+.notice-title2 {
+  margin-left: 30rpx;
+  font-size: 32rpx;
+  color: black;
+}
+.notice-bot{
+  height: 40rpx;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.notice-time{
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 12rpx;
+  margin-right: 25rpx;
+}

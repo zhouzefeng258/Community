@@ -1,0 +1,41 @@
+<!--components/actItem.wxml-->
+<view class="act-item" wx:if="{{wxjs.getShowflag(actData.ActivityType,actType)}}">
+	<view class="item-l">
+		<view class="act-img">
+			<image width="80" height="80" src="{{actData.activityImage}}" />
+		</view>
+	</view>
+	<view class="item-r">
+		<view class="item">
+			<text class="item-cont title">{{actData.activityName}}</text>
+		</view>
+		<view class="item">
+			<text class="item-cont"><text class="label">时间：</text>{{actData.startTime}}</text>
+		</view>
+		<view class="item">
+			<text class="item-cont"><text class="label">地点：</text>{{actData.address}}</text>
+		</view>
+		<!-- <view class="item">
+      <text class="item-cont"><text class="label">举办方：</text>{{actData.clubName}}</text>
+    </view> -->
+		<view class="item">
+			<text class="item-cont"><text class="label">状态：</text>
+			<text class="type">{{actData.ActivityType}}</text></text>
+		</view>
+	</view>
+</view>
+<wxs module="wxjs">
+	var getShowflag = function(ActivityType,actType) {
+    console.log(ActivityType)
+    console.log(actType)
+    if(ActivityType == actType ){
+      return true
+    }else{
+      return false
+    }
+	}
+	module.exports = {
+		 getShowflag:  getShowflag,
+	}
+</wxs>
+<van-notify id="van-notify" />

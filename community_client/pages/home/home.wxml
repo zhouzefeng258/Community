@@ -1,0 +1,61 @@
+<!--pages/home/home.wxml-->
+<view class="page" style="height:{{windowHeight}}">
+  <view class="page-top">
+    <view class="swrap">
+      <w-swiper />
+    </view>
+    <view class="notice">
+      <van-notice-bar text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。">
+      </van-notice-bar>
+    </view>
+  </view>
+  <view class="page-mid">
+    <van-grid>
+      <van-grid-item icon="photo-o" text="文字" />
+      <van-grid-item icon="photo-o" text="文字" />
+      <van-grid-item icon="photo-o" text="文字" />
+      <van-grid-item icon="photo-o" text="文字" />
+    </van-grid>
+    <view class="news">
+      <van-divider hairline contentPosition="center" customStyle="color: #1989fa;border-color: #1989fa;font-size: 12px; width:200rpx">新闻</van-divider>
+      <view class="news-con">
+        <view class="news-title">
+          <text>新闻一号</text>
+        </view>
+        <view class="news-img">
+          <image class="newImg" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=524661168,971104595&fm=26&gp=0.jpg" mode="widthFix"></image>
+        </view>
+        <view class="news-time">
+          <text>2019-8-12</text>
+        </view>
+      </view>
+       <view class="news-con">
+        <view class="news-title">
+          <text>新闻一号</text>
+        </view>
+        <view class="news-img">
+          <image class="newImg" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=524661168,971104595&fm=26&gp=0.jpg" mode="widthFix"></image>
+        </view>
+        <view class="news-time">
+          <text>2019-8-12</text>
+        </view>
+      </view>
+       <view class="news-con">
+        <view class="news-title">
+          <text>新闻一号</text>
+        </view>
+        <view class="news-img">
+          <image class="newImg" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=524661168,971104595&fm=26&gp=0.jpg" mode="widthFix"></image>
+        </view>
+        <view class="news-time">
+          <text>2019-8-12</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page-bot">
+    <!-- <view class="footer">
+      <w-botnav />
+    </view> -->
+  </view>
+</view>

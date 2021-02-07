@@ -1,0 +1,100 @@
+/* pages/clubIntroduction/clubIntroduction.wxss */
+page{
+  background-color: rgba(0, 0, 0, 0.00)
+}
+.pageCon{
+  display: flex;
+  flex-direction: column;
+}
+.top{
+  width: 100%;
+  height: 250rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.club-icon{
+  margin-left: 5%;
+  width:30%; 
+}
+.club-right{
+  width: 70%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.club-right-top{
+  margin-left: 3%;
+  display: flex;
+}
+.club-title{
+  font-size: 40rpx;
+  font-weight: 300;
+}
+.club-star{
+  margin-left: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.club-type{
+  margin-left: 3%;
+  height: 40rpx;
+}
+.club-type text{
+  background: #49afcd;
+  padding: 5rpx 20rpx;
+  color:white;
+  font-size: 30rpx;
+  font-weight: 300;
+  border-radius: 5rpx;
+}
+.details-con{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.club-details{
+  display: flex;
+  flex-direction: column;
+  width: 90%
+}
+.clubItem{
+  display: flex;
+  flex-direction: column;
+  margin: 40rpx  0;
+}
+.title{
+  font-size: 34rpx;
+  color: black;
+}
+.content{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  color: #5a5a5a;
+}
+.bot{
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 93.5%;
+}
+.mid-title{
+  background-color: white;
+  height: 110rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.10);
+  display: flex;
+  align-items: center;
+}
+.mid-title text{
+  font-size: 35rpx;
+  display: block;
+  width: 140rpx;
+  height: 110rpx;
+  line-height: 130rpx;
+  margin-left: 45rpx;
+  color: #5a5a5a;
+  border-bottom: 3px solid #6149f6;
+  text-align: center;
+}

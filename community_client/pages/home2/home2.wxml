@@ -1,0 +1,36 @@
+<!--pages/home2/home2.wxml-->
+<view class="page" style="height:{{windowHeight}}">
+  <view class="page-top">
+    <view class="swrap">
+      <w-swiper class="w-swiper" swiperList="{{swiperList}}"/>
+    </view>
+  </view>
+  <view class="page-mid">
+    <view class="mid-title">
+      <view class="text">
+        <text>校园新闻</text>
+      </view>
+    </view>
+    <view class="news-item" wx:for="{{news}}" bindtap="toNewsIntro" data-id='{{item.newsId}}'>
+      <view class="news-con">
+        <view class="news-left">
+          <view class="news-title">{{item.newsTitle}}</view>
+          <view class="news-time">
+            <text>{{item.createdAt}}</text>
+          </view>
+        </view>
+        <view class="news-right">
+          <view class="news-img">
+            <image class="newImg" src="{{item.newsImage}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+  <view class="page-bot">
+    <!-- <view class="footer">
+      <w-botnav />
+    </view> -->
+  </view>
+</view>

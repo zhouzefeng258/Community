@@ -1,0 +1,49 @@
+.pageCon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-item{
+  width: 90%;
+  margin-bottom: 30rpx;
+}
+.feedback{
+  margin-top: 30rpx;
+}
+.label{
+  margin-bottom: 20rpx;
+  color: black;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.input-class{
+  background-color: #f3f3f3;
+  width: 100%;
+  padding: 15rpx 15rpx;
+}
+.textarea-class{
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 350rpx;
+  padding: 15rpx 15rpx;
+}
+.place-holder{
+  font-size: 30rpx;
+  color:#aeaeae;
+}
+.input{
+  margin-top: 25rpx;
+}
+.page-tips{
+  width: 90%;
+  padding-bottom: 25rpx;
+}
+.page-tips text{
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25rpx;
+}
+.submit{
+  position:fixed;
+  top:85%;
+  width: 90%;
+}

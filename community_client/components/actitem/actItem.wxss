@@ -1,0 +1,67 @@
+/* components/actItem.wxss */
+.act-item{
+  width: 85%;
+  height: 250rpx;
+  /* box-shadow: 0 0 5px 2px rgba(0,0,0, 0.2); */
+  background-color: white;
+  border-radius: 15rpx;
+  display: flex;
+  /* border: 1px solid rgba(0,0,0, 0.7); */
+  box-shadow: 0 0 10px 2px rgba(0,0,0, 0.2);
+  padding: 12rpx;
+}
+.item{
+  margin-left: 10%;
+  margin-top: 15rpx;
+  display: flex;
+}
+/* .item-label{
+  display: inline-block;
+  width: 150rpx;
+  text-align: right;
+  color: rgba(0,0,0, 0.4);
+} */
+.item-cont{
+  margin-left: 5rpx;
+  font-size: 25rpx;
+  font-weight: 350;
+  margin-top: 10rpx;
+}
+.buton{
+  margin-left: 20rpx;
+  color: #42a5f5;
+}
+.title{
+  font-size: 32rpx;
+  font-weight: 350;
+}
+.item-r{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 5rpx;
+}
+.label{
+  
+}
+.item-l{
+  width: 30%;
+}
+.act-img{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.act-img image{
+  width: 100%;
+  height: 100%;
+}
+.type{
+  color: #42a5f5;
+}
+.none{
+  color: red;
+}
+

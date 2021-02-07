@@ -1,0 +1,71 @@
+<!--pages/userInfo/userInfo.wxml-->
+<view class="page">
+	<view class="bindInfo {{editFlag? 'hide':''}}">
+		<view class="form-con">
+			<view class="header">
+				<open-data class='icon' mode='aspectFit' type='userAvatarUrl'></open-data>
+			</view>
+			<view class="form-field">
+				<view class="input-con">
+					<input class="info-input" auto-focus placeholder="请输入姓名" value="{{userInfo.name}}" bindinput="nameInputChange" />
+				</view>
+				<view class="input-con">
+					<picker class="info-input" bindchange="sexPickerChange" value="{{sexIndex}}" range="{{sexArr}}">
+						<view class="{{pickerStyle}}">
+							{{userInfo.sex}}
+						</view>
+					</picker>
+				</view>
+				<view class="input-con">
+					<picker class="info-input" bindchange="depPickerChange" value="{{departmentIndex}}" range="{{departmentArr}}">
+						<view class="{{pickerStyle1}}">
+							{{userInfo.department}}
+						</view>
+					</picker>
+				</view>
+				<view class="input-con">
+					<input class="info-input" auto-focus placeholder="请输入班级" value="{{userInfo.class}}" bindinput="classInputChange" />
+				</view>
+				<view class="input-con">
+					<input class="info-input" auto-focus placeholder="请输入学号" value="{{userInfo.studentId}}" bindinput="stIdInputChange" />
+				</view>
+			</view>
+			<view class="button-field">
+				<van-button round type="info" custom-style="width:175rpx;height:60rpx" bind:click="userInfoSubmit">提交</van-button>
+				<van-button round type="primary" custom-style="width:175rpx;height:60rpx" bind:click="showText">取消</van-button>
+			</view>
+		</view>
+	</view>
+	<view class="userInfo {{!editFlag? 'hide':''}}">
+		<view class="form-con">
+			<view class="header">
+				<open-data class='icon' mode='aspectFit' type='userAvatarUrl'></open-data>
+			</view>
+			<view class="form-field">
+				<view class="text-con">
+					<text class="label">姓名</text>
+					<text class="text">{{userInfo.name}}</text>
+				</view>
+				<view class="text-con">
+					<text class="label">性别</text>
+					<text class="text">{{userInfo.sex}}</text>
+				</view>
+				<view class="text-con">
+					<text class="label">分院</text>
+					<text class="text">{{userInfo.department}}</text>
+				</view>
+				<view class="text-con">
+					<text class="label">班级</text>
+					<text class="text">{{userInfo.class}}</text>
+				</view>
+				<view class="text-con">
+					<text class="label">学号</text>
+					<text class="text">{{userInfo.studentId}}</text>
+				</view>
+			</view>
+			<view class="edit-field">
+				<van-button round type="warning" custom-style="width:300rpx;height:60rpx" bind:click="showInput">编辑</van-button>
+			</view>
+		</view>
+	</view>
+</view>

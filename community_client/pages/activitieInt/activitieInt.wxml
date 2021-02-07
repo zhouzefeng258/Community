@@ -1,0 +1,61 @@
+<!--pages/activitieInt/activitieInt.wxml-->
+<view class="pageCon" >
+  <view class="top">
+    <view class="topCon">
+      <view class="act-image">
+        <image width="100" height="100" src="{{actInfo.activityImage}}" />
+      </view>
+      <view class="act-right">
+        <view class="act-text title">
+          {{actInfo.activityName}}
+        </view>
+        <view class="act-text club">社团名称：{{actInfo.clubinfo.clubName}}</view>
+        <view class="act-text star">社团星级：
+          <van-rate readonly value="{{wxjs.getStar(clubInfo.starTotal,clubInfo.evaluationTimes)}}" size="{{ 14 }}" bind:change="onChange" />
+        </view>
+        <view class="act-text president">社团负责人：{{actInfo.clubinfo.president}}</view>
+        <view class="act-text responsible">活动负责人：{{actInfo.ActivityLeader}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="mid">
+    <view class="mid-con">
+      <view class="mid-text one">
+        <text class="mid-title">时间</text>
+        <text class="cont time">{{actInfo.startTime}}</text>
+      </view>
+      <view class="mid-text">
+        <text class="mid-title">地点</text>
+        <text class="cont address">{{actInfo.address}}</text>
+      </view>
+      <view class="mid-text">
+        <text class="mid-title">主办方</text>
+        <text class="cont sponsor">{{actInfo.clubName}}</text>
+      </view>
+      <view class="mid-text last">
+        <text class="mid-title">简介</text>
+        <text class="cont intro">{{actInfo.ActivityIntro}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="bot">
+  <view class="bot-con">
+  <view class="act-num"><text>活动剩余名额 {{actInfo.surplusNumber}}/{{actInfo.totalNumber}}</text></view>
+  <button class="act-btn"wx:if="{{btn_flag===1}}" bindtap="enroll">报名</button>
+  <button class="act-btn disable"wx:if="{{btn_flag===2}}">活动已结束</button>
+  <button class="act-btn cancel"wx:if="{{btn_flag===3}}" bindtap="quitenroll">取消报名</button>
+  <button class="act-btn disable"wx:if="{{btn_flag===4}}">报名结束</button>
+  </view>
+  </view>
+  <van-toast id="van-toast" />
+  <van-notify id="van-notify" />
+</view>
+
+<wxs module="wxjs">
+	var getStar = function(starTotal, evaluationTimes) {
+		var s = 0
+		s = (starTotal / evaluationTimes).toFixed()
+		return s
+	}
+	module.exports.getStar = getStar;
+</wxs>

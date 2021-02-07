@@ -1,0 +1,51 @@
+/* pages/Notice/Notice.wxss */
+.pageCon{
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+.not-top{
+  height: 150rpx;
+  width: 90%;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.not-title{
+  font-size: 35rpx;
+  font-weight: 700;
+}
+.not-time{
+  font-size: 30rpx;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 20rpx;
+}
+.not-mid{
+  width: 90%;
+  margin-top: 20rpx;
+}
+.not-body{
+  font-size: 30rpx;
+  color: rgba(0, 0, 0, 0.8);
+}
+.not-bot{
+  width: 100%;
+  margin-top: 45rpx;
+  display: flex;
+  margin-left: 15%;
+}
+.not-club{
+  font-size: 32rpx;
+  color: black;
+}
+.not-isser{
+  margin-left: 10rpx;
+  font-size: 32rpx;
+  color: black;
+  margin-bottom: 20rpx;
+}

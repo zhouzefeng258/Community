@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/home2/home2",
+    "pages/userInfo/userInfo",
+    "pages/bindInfo/bindInfo",
+    "pages/club/club",
+    "pages/home/home",
+    "pages/activitieInt/activitieInt",
+    "pages/my/my",
+    "pages/empower/empower",
+    "pages/clubsList/clubsList",
+    "pages/clubIntroduction/clubIntroduction",
+    "pages/newsContent/newsContent",
+    "pages/feedback/feedback",
+    "pages/myActivitie/myActivitie",
+    "pages/activitieList/activitieList",
+    "pages/Notice/Notice"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-rate": "@vant/weapp/rate/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-toast": "@vant/weapp/toast/index"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#6149f6",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/home2/home2",
+        "text": "首页",
+        "iconPath": "image/icon/navbar1_1.png",
+        "selectedIconPath": "image/icon/navbar1_2.png"
+      },
+      {
+        "pagePath": "pages/activitieList/activitieList",
+        "text": "活动",
+        "iconPath": "image/icon/navbar4_1.png",
+        "selectedIconPath": "image/icon/navbar4_2.png"
+      },
+      {
+        "pagePath": "pages/club/club",
+        "text": "社团",
+        "iconPath": "image/icon/navbar2_1.png",
+        "selectedIconPath": "image/icon/navbar2_2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "image/icon/navbar3_1.png",
+        "selectedIconPath": "image/icon/navbar3_2.png"
+      }
+    ],
+    "position": "bottom"
+  }
+}

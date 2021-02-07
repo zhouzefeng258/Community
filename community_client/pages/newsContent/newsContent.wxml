@@ -1,0 +1,12 @@
+<!--pages/newsContent/newsContent.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="page-con">
+  <view class="news">
+    <view class="news-title">{{newsData.newsTitle}}</view>
+    <view class="news-time">{{newsData.createdAt}}</view>
+    <view class="news-content">
+     <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <view class="news-issuer">来源：{{newsData.newsSource}}</view>
+  </view>
+</view>

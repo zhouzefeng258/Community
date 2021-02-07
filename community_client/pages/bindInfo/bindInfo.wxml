@@ -1,0 +1,39 @@
+<!-- 完善信息界面 -->
+<view class="page" style="height:{{windowHeight}};">
+  <view class="bindInfo">
+    <view class="form-con"> 
+      <view class="header">
+        <open-data class='icon' mode='aspectFit' type='userAvatarUrl'></open-data>
+      </view>
+      <view class="form-field">
+        <view class="input-con">
+          <input class="info-input" auto-focus placeholder="请输入姓名" value="{{userInfo.name}}" bindinput="nameInputChange"/>
+        </view>
+        <view class="input-con">
+          <picker class="info-input" bindchange="sexPickerChange" value="{{sexIndex}}" range="{{sexArr}}">
+            <view class="{{pickerStyle}}">
+              {{userInfo.sex}}
+            </view>
+          </picker>
+        </view>
+        <view class="input-con">
+          <picker class="info-input" bindchange="depPickerChange" value="{{departmentIndex}}" range="{{departmentArr}}">
+            <view class="{{pickerStyle1}}">
+              {{userInfo.department}}
+            </view>
+          </picker>
+        </view>
+        <view class="input-con">
+          <input class="info-input" auto-focus placeholder="请输入班级" value="{{userInfo.class}}" bindinput="classInputChange"/>
+        </view>
+        <view class="input-con">
+          <input class="info-input" auto-focus placeholder="请输入学号" value="{{userInfo.studentId}}"bindinput="stIdInputChange"/>
+        </view>
+      </view>
+      <view class="button-field">
+        <van-button round color="linear-gradient(to right, #4bb0ff, #6149f6)" bind:click="userInfoSubmit">提交信息</van-button>
+      </view>
+    </view>
+   
+  </view>
+</view>

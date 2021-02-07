@@ -1,0 +1,40 @@
+<!--pages/clubsList/clubsList.wxml-->
+<view class="pagebox">
+	<view class="search">
+		<view class="search-input">
+			<van-search value="{{ searchData }}" placeholder="请输入社团名称" bind:change="serch" />
+		</view>
+	</view>
+	<view class="clublist">
+		<view class="clubs-con" bindtap="toClubInfo" data-clubid='{{item.clubId}}' wx:for="{{clubInfoList}}">
+			<view class="clu-icon">
+				<van-image width="60" height="60" lazy-load round src="{{item.clubIcon}}" />
+			</view>
+			<view class="con-right">
+				<view class="right-top">
+					<view class="clu-title">
+						<text>{{item.clubName}}</text>
+					</view>
+					<view class="clu-star">
+						<van-rate readonly value="{{wxjs.getStar(item.starTotal,item.evaluationTimes)}}"/>
+					</view>
+				</view>
+				<view class="clu-type">
+					<text>{{item.clubType}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+
+</view>
+<wxs module="wxjs">
+var getStar = function(starTotal,evaluationTimes) {
+	console.log(starTotal)
+  console.log(evaluationTimes)
+  var s = 0
+  s = (starTotal / evaluationTimes) .toFixed()
+	return s
+}
+
+module.exports.getStar = getStar;
+</wxs>

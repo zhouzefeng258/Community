@@ -1,0 +1,17 @@
+<!--授权登陆页面-->
+
+<view class="page">
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>   
+          <van-image width="120" height="120" lazy-load round src="http://localhost:3000/public/images/uploadImg/1589988503480.png" />
+        </view>
+        <view class='content'>
+            <view>申请获取以下权限</view>
+            <text>获得你的公开信息(昵称，头像等)</text>
+        </view>
+ 
+        <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+            授权登录
+        </button>
+    </view>
+</view>
